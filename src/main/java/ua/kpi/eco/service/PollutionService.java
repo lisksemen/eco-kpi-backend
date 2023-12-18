@@ -10,12 +10,12 @@ import ua.kpi.eco.exception.ObjectNotFoundException;
 import ua.kpi.eco.exception.PollutantNotFoundException;
 import ua.kpi.eco.exception.PollutionNotFoundException;
 import ua.kpi.eco.mapper.PollutionMapper;
-import ua.kpi.eco.model.Object;
-import ua.kpi.eco.model.Pollutant;
-import ua.kpi.eco.model.Pollution;
-import ua.kpi.eco.repository.ObjectRepository;
-import ua.kpi.eco.repository.PollutantRepository;
-import ua.kpi.eco.repository.PollutionRepository;
+import ua.kpi.eco.persistence.model.Object;
+import ua.kpi.eco.persistence.model.Pollutant;
+import ua.kpi.eco.persistence.model.Pollution;
+import ua.kpi.eco.persistence.repository.ObjectRepository;
+import ua.kpi.eco.persistence.repository.PollutantRepository;
+import ua.kpi.eco.persistence.repository.PollutionRepository;
 
 import java.util.List;
 

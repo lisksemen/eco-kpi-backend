@@ -9,11 +9,11 @@ import ua.kpi.eco.exception.EmeregencyNotFoundException;
 import ua.kpi.eco.exception.ObjectNotFoundException;
 import ua.kpi.eco.exception.PollutantNotFoundException;
 import ua.kpi.eco.mapper.EmergencyMapper;
-import ua.kpi.eco.model.Emergency;
-import ua.kpi.eco.model.Pollutant;
-import ua.kpi.eco.repository.EmergencyRepository;
-import ua.kpi.eco.repository.ObjectRepository;
-import ua.kpi.eco.repository.PollutantRepository;
+import ua.kpi.eco.persistence.model.Emergency;
+import ua.kpi.eco.persistence.model.Pollutant;
+import ua.kpi.eco.persistence.repository.EmergencyRepository;
+import ua.kpi.eco.persistence.repository.ObjectRepository;
+import ua.kpi.eco.persistence.repository.PollutantRepository;
 
 import java.util.List;
 

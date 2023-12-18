@@ -3,7 +3,7 @@ package ua.kpi.eco.mapper;
 import org.mapstruct.Mapper;
 import ua.kpi.eco.dto.ObjectDto;
 import ua.kpi.eco.dto.ObjectResponseDto;
-import ua.kpi.eco.model.Object;
+import ua.kpi.eco.persistence.model.Object;
 
 @Mapper(componentModel = "spring")
 public interface ObjectMapper {

@@ -1,4 +1,4 @@
-package ua.kpi.eco.model;
+package ua.kpi.eco.persistence.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

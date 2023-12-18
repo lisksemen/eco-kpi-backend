@@ -1,7 +1,7 @@
-package ua.kpi.eco.repository;
+package ua.kpi.eco.persistence.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ua.kpi.eco.model.Pollution;
+import ua.kpi.eco.persistence.model.Pollution;
 
 import java.util.List;
 import java.util.Optional;

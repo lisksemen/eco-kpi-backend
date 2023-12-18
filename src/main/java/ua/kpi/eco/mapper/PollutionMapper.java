@@ -4,7 +4,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import ua.kpi.eco.dto.PollutionResponseDto;
-import ua.kpi.eco.model.Pollution;
+import ua.kpi.eco.persistence.model.Pollution;
 
 @Mapper(componentModel = "spring")
 public interface PollutionMapper {

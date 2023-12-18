@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ua.kpi.eco.model.PollutantType;
+import ua.kpi.eco.persistence.model.PollutantType;
 import ua.kpi.eco.service.PollutantTypeService;
 
 import java.util.List;

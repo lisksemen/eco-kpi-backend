@@ -8,10 +8,10 @@ import ua.kpi.eco.dto.PollutantResponseDto;
 import ua.kpi.eco.exception.PollutantNotFoundException;
 import ua.kpi.eco.exception.PollutantTypeNotFoundException;
 import ua.kpi.eco.mapper.PollutantMapper;
-import ua.kpi.eco.model.Pollutant;
-import ua.kpi.eco.model.PollutantType;
-import ua.kpi.eco.repository.PollutantRepository;
-import ua.kpi.eco.repository.PollutantTypeRepository;
+import ua.kpi.eco.persistence.model.Pollutant;
+import ua.kpi.eco.persistence.model.PollutantType;
+import ua.kpi.eco.persistence.repository.PollutantRepository;
+import ua.kpi.eco.persistence.repository.PollutantTypeRepository;
 
 import java.util.List;
 
@@ -23,6 +23,9 @@ public class PollutantService {
     private final PollutantMapper pollutantMapper;
     private final PollutantTypeRepository pollutantTypeRepository;
 
+    public Long findIdByName(String name) {
+        return pollutantRepository.findByNameIgnoreCase(name).map(Pollutant::getId).orElseThrow();
+    }
     @Transactional
     public PollutantResponseDto create(PollutantDto pollutantDto) {
         PollutantType pollutantType = pollutantTypeRepository.findById(pollutantDto.pollutantTypeId()).orElseThrow(() -> new PollutantTypeNotFoundException("id = " + pollutantDto.pollutantTypeId()));

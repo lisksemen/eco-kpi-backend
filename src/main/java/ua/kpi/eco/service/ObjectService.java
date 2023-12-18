@@ -7,7 +7,7 @@ import ua.kpi.eco.dto.ObjectDto;
 import ua.kpi.eco.dto.ObjectResponseDto;
 import ua.kpi.eco.exception.ObjectNotFoundException;
 import ua.kpi.eco.mapper.ObjectMapper;
-import ua.kpi.eco.repository.ObjectRepository;
+import ua.kpi.eco.persistence.repository.ObjectRepository;
 
 import java.util.List;
 

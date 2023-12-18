@@ -2,7 +2,7 @@ package ua.kpi.eco.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import ua.kpi.eco.model.Pollutant;
+import ua.kpi.eco.persistence.model.Pollutant;
 
 public record PollutionResponseDto(
         Long id,

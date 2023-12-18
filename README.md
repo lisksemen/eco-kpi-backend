@@ -1,2 +1,0 @@
-# eco-kpi
-Environmental monitoring

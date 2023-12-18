@@ -1,6 +1,6 @@
 package ua.kpi.eco.dto;
 
-import ua.kpi.eco.model.PollutantType;
+import ua.kpi.eco.persistence.model.PollutantType;
 
 public record PollutantResponseDto(
         Long id,

@@ -3,8 +3,8 @@ package ua.kpi.eco.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ua.kpi.eco.exception.PollutantTypeNotFoundException;
-import ua.kpi.eco.model.PollutantType;
-import ua.kpi.eco.repository.PollutantTypeRepository;
+import ua.kpi.eco.persistence.model.PollutantType;
+import ua.kpi.eco.persistence.repository.PollutantTypeRepository;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package ua.kpi.eco.dto;
 
-import ua.kpi.eco.model.Object;
-import ua.kpi.eco.model.Pollutant;
+import ua.kpi.eco.persistence.model.Object;
+import ua.kpi.eco.persistence.model.Pollutant;
 
 public record EmergencyResponseDto(
         Long id,
