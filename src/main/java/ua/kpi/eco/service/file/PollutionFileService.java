@@ -92,18 +92,18 @@ public class PollutionFileService {
 
     private PollutionDto parseRowToPollutionDto(Row row) {
         Cell objectNameCell = row.getCell(0);
-        Cell pollutantNameCell = row.getCell(1);
+        Cell pollutantIdCell = row.getCell(1);
         Cell valuePollutionCell = row.getCell(2);
         Cell yearCell = row.getCell(3);
         Cell concentrationCell = row.getCell(4);
 
         String objectName = objectNameCell.getStringCellValue().trim();
-        String pollutantName = pollutantNameCell.getStringCellValue().trim();
+        Long pollutantId = (long) pollutantIdCell.getNumericCellValue();
         double valuePollution = parseDoubleValue(valuePollutionCell);
         int year = (int) yearCell.getNumericCellValue();
         double pollutionConcentration = parseDoubleValue(concentrationCell);
 
-        return new PollutionDto(objectName, "empty", pollutantService.findIdByName(pollutantName), year, valuePollution, pollutionConcentration);
+        return new PollutionDto(objectName, "empty", pollutantId, year, valuePollution, pollutionConcentration);
     }
 
     private void writeRow(Row row) {
